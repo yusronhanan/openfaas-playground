@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.64.2:8080
+functions:
+  ping:
+    lang: python3
+    handler: ./ping
+    image: ping:latest
+
